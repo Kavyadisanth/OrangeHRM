@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\disan\eclipse-workspace\OrangeHRM\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">25 methods,   25 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ohrm.testcases.PIMTest" class="method navigator-link" hash-for-method="deletePIM">deletePIM</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ohrm.testcases.AddEmployeeTest" class="method navigator-link" hash-for-method="validateAddEmployee">validateAddEmployee</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ohrm.testcases.RecruitmentTest" class="method navigator-link" hash-for-method="validateCandidate">validateCandidate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ohrm.testcases.ConfigurationTest" class="method navigator-link" hash-for-method="validateConfiguration">validateConfiguration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ohrm.testcases.RecruitmentTest" class="method navigator-link" hash-for-method="validateDownloadIcon">validateDownloadIcon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ohrm.testcases.AddEmployeeTest" class="method navigator-link" hash-for-method="validateEmployeeNameTextbox">validateEmployeeNameTextbox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ohrm.testcases.AddEmployeeTest" class="method navigator-link" hash-for-method="validateFillEmployeeNameTextbox">validateFillEmployeeNameTextbox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ohrm.testcases.VacanciesTest" class="method navigator-link" hash-for-method="validateJobTitleDropdown">validateJobTitleDropdown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ohrm.testcases.LoginPageTest" class="method navigator-link" hash-for-method="validateLoginTest">validateLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ohrm.testcases.PIMTest" class="method navigator-link" hash-for-method="validatePIM">validatePIM</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ohrm.testcases.PIMTest" class="method navigator-link" hash-for-method="validatePIMEdit">validatePIMEdit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ohrm.testcases.PIMTest" class="method navigator-link" hash-for-method="validatePIMEmployeeList">validatePIMEmployeeList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ohrm.testcases.RecruitmentTest" class="method navigator-link" hash-for-method="validateRecruitment">validateRecruitment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ohrm.testcases.ConfigurationTest" class="method navigator-link" hash-for-method="validateReports">validateReports</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ohrm.testcases.VacanciesTest" class="method navigator-link" hash-for-method="validateReset">validateReset</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ohrm.testcases.RecruitmentTest" class="method navigator-link" hash-for-method="validateResumeUploader">validateResumeUploader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ohrm.testcases.RecruitmentTest" class="method navigator-link" hash-for-method="validateResumeUploaderLargeFiles">validateResumeUploaderLargeFiles</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ohrm.testcases.RecruitmentTest" class="method navigator-link" hash-for-method="validateResumeUploaderTextbox">validateResumeUploaderTextbox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ohrm.testcases.AddEmployeeTest" class="method navigator-link" hash-for-method="validateSavebutton">validateSavebutton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ohrm.testcases.AddEmployeeTest" class="method navigator-link" hash-for-method="validateToggleSwitch">validateToggleSwitch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ohrm.testcases.AddEmployeeTest" class="method navigator-link" hash-for-method="validateUploadImage">validateUploadImage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ohrm.testcases.AddEmployeeTest" class="method navigator-link" hash-for-method="validateUploadImageButton">validateUploadImageButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ohrm.testcases.AddEmployeeTest" class="method navigator-link" hash-for-method="validateUploadImageLargeFiles">validateUploadImageLargeFiles</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ohrm.testcases.VacanciesTest" class="method navigator-link" hash-for-method="validateVacancies">validateVacancies</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ohrm.testcases.RecruitmentTest" class="method navigator-link" hash-for-method="validateViewIcon">validateViewIcon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ohrm.testcases.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLoginTest">
+                  </a> <!-- validateLoginTest -->
+                  <span class="method-name">validateLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ohrm.testcases.PIMTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deletePIM">
+                  </a> <!-- deletePIM -->
+                  <span class="method-name">deletePIM</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatePIM">
+                  </a> <!-- validatePIM -->
+                  <span class="method-name">validatePIM</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatePIMEdit">
+                  </a> <!-- validatePIMEdit -->
+                  <span class="method-name">validatePIMEdit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatePIMEmployeeList">
+                  </a> <!-- validatePIMEmployeeList -->
+                  <span class="method-name">validatePIMEmployeeList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ohrm.testcases.AddEmployeeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateAddEmployee">
+                  </a> <!-- validateAddEmployee -->
+                  <span class="method-name">validateAddEmployee</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEmployeeNameTextbox">
+                  </a> <!-- validateEmployeeNameTextbox -->
+                  <span class="method-name">validateEmployeeNameTextbox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateFillEmployeeNameTextbox">
+                  </a> <!-- validateFillEmployeeNameTextbox -->
+                  <span class="method-name">validateFillEmployeeNameTextbox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateSavebutton">
+                  </a> <!-- validateSavebutton -->
+                  <span class="method-name">validateSavebutton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateToggleSwitch">
+                  </a> <!-- validateToggleSwitch -->
+                  <span class="method-name">validateToggleSwitch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateUploadImage">
+                  </a> <!-- validateUploadImage -->
+                  <span class="method-name">validateUploadImage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateUploadImageButton">
+                  </a> <!-- validateUploadImageButton -->
+                  <span class="method-name">validateUploadImageButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateUploadImageLargeFiles">
+                  </a> <!-- validateUploadImageLargeFiles -->
+                  <span class="method-name">validateUploadImageLargeFiles</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ohrm.testcases.VacanciesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateJobTitleDropdown">
+                  </a> <!-- validateJobTitleDropdown -->
+                  <span class="method-name">validateJobTitleDropdown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateReset">
+                  </a> <!-- validateReset -->
+                  <span class="method-name">validateReset</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateVacancies">
+                  </a> <!-- validateVacancies -->
+                  <span class="method-name">validateVacancies</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ohrm.testcases.RecruitmentTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateCandidate">
+                  </a> <!-- validateCandidate -->
+                  <span class="method-name">validateCandidate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateDownloadIcon">
+                  </a> <!-- validateDownloadIcon -->
+                  <span class="method-name">validateDownloadIcon</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateRecruitment">
+                  </a> <!-- validateRecruitment -->
+                  <span class="method-name">validateRecruitment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateResumeUploader">
+                  </a> <!-- validateResumeUploader -->
+                  <span class="method-name">validateResumeUploader</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateResumeUploaderLargeFiles">
+                  </a> <!-- validateResumeUploaderLargeFiles -->
+                  <span class="method-name">validateResumeUploaderLargeFiles</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateResumeUploaderTextbox">
+                  </a> <!-- validateResumeUploaderTextbox -->
+                  <span class="method-name">validateResumeUploaderTextbox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateViewIcon">
+                  </a> <!-- validateViewIcon -->
+                  <span class="method-name">validateViewIcon</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ohrm.testcases.ConfigurationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateConfiguration">
+                  </a> <!-- validateConfiguration -->
+                  <span class="method-name">validateConfiguration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateReports">
+                  </a> <!-- validateReports -->
+                  <span class="method-name">validateReports</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\disan\eclipse-workspace\OrangeHRM\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ohrm.testcases.VacanciesTest&quot;/&gt;
+      &lt;class name=&quot;com.ohrm.testcases.ConfigurationTest&quot;/&gt;
+      &lt;class name=&quot;com.ohrm.testcases.AddEmployeeTest&quot;/&gt;
+      &lt;class name=&quot;com.ohrm.testcases.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;com.ohrm.testcases.PIMTest&quot;/&gt;
+      &lt;class name=&quot;com.ohrm.testcases.RecruitmentTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(25);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'validateResumeUploader')
+data.setCell(0, 2, 'com.ohrm.testcases.RecruitmentTest')
+data.setCell(0, 3, 14182);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validateUploadImage')
+data.setCell(1, 2, 'com.ohrm.testcases.AddEmployeeTest')
+data.setCell(1, 3, 13280);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validateUploadImageLargeFiles')
+data.setCell(2, 2, 'com.ohrm.testcases.AddEmployeeTest')
+data.setCell(2, 3, 13152);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validateResumeUploaderLargeFiles')
+data.setCell(3, 2, 'com.ohrm.testcases.RecruitmentTest')
+data.setCell(3, 3, 12813);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validateVacancies')
+data.setCell(4, 2, 'com.ohrm.testcases.VacanciesTest')
+data.setCell(4, 3, 9468);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'validateViewIcon')
+data.setCell(5, 2, 'com.ohrm.testcases.RecruitmentTest')
+data.setCell(5, 3, 8962);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'deletePIM')
+data.setCell(6, 2, 'com.ohrm.testcases.PIMTest')
+data.setCell(6, 3, 7846);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validatePIMEdit')
+data.setCell(7, 2, 'com.ohrm.testcases.PIMTest')
+data.setCell(7, 3, 7369);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validateResumeUploaderTextbox')
+data.setCell(8, 2, 'com.ohrm.testcases.RecruitmentTest')
+data.setCell(8, 3, 7067);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validateSavebutton')
+data.setCell(9, 2, 'com.ohrm.testcases.AddEmployeeTest')
+data.setCell(9, 3, 6805);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'validateDownloadIcon')
+data.setCell(10, 2, 'com.ohrm.testcases.RecruitmentTest')
+data.setCell(10, 3, 6751);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'validateEmployeeNameTextbox')
+data.setCell(11, 2, 'com.ohrm.testcases.AddEmployeeTest')
+data.setCell(11, 3, 6730);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'validateJobTitleDropdown')
+data.setCell(12, 2, 'com.ohrm.testcases.VacanciesTest')
+data.setCell(12, 3, 6501);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'validateReset')
+data.setCell(13, 2, 'com.ohrm.testcases.VacanciesTest')
+data.setCell(13, 3, 6427);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'validateToggleSwitch')
+data.setCell(14, 2, 'com.ohrm.testcases.AddEmployeeTest')
+data.setCell(14, 3, 6355);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'validateUploadImageButton')
+data.setCell(15, 2, 'com.ohrm.testcases.AddEmployeeTest')
+data.setCell(15, 3, 6336);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'validateAddEmployee')
+data.setCell(16, 2, 'com.ohrm.testcases.AddEmployeeTest')
+data.setCell(16, 3, 6023);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'validateConfiguration')
+data.setCell(17, 2, 'com.ohrm.testcases.ConfigurationTest')
+data.setCell(17, 3, 5881);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'validateReports')
+data.setCell(18, 2, 'com.ohrm.testcases.ConfigurationTest')
+data.setCell(18, 3, 5880);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'validatePIMEmployeeList')
+data.setCell(19, 2, 'com.ohrm.testcases.PIMTest')
+data.setCell(19, 3, 5780);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'validateFillEmployeeNameTextbox')
+data.setCell(20, 2, 'com.ohrm.testcases.AddEmployeeTest')
+data.setCell(20, 3, 5681);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'validateCandidate')
+data.setCell(21, 2, 'com.ohrm.testcases.RecruitmentTest')
+data.setCell(21, 3, 5330);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'validatePIM')
+data.setCell(22, 2, 'com.ohrm.testcases.PIMTest')
+data.setCell(22, 3, 4469);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'validateRecruitment')
+data.setCell(23, 2, 'com.ohrm.testcases.RecruitmentTest')
+data.setCell(23, 3, 4182);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'validateLoginTest')
+data.setCell(24, 2, 'com.ohrm.testcases.LoginPageTest')
+data.setCell(24, 3, 804);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ohrm.testcases.VacanciesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserConfig</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateJobTitleDropdown</span>
+                <span class="method-start">9418 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">15924 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserConfig</span>
+                <span class="method-start">16176 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateReset</span>
+                <span class="method-start">27104 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">33535 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserConfig</span>
+                <span class="method-start">33788 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateVacancies</span>
+                <span class="method-start">45429 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">54897 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ohrm.testcases.ConfigurationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserConfig</span>
+                <span class="method-start">55780 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateConfiguration</span>
+                <span class="method-start">67402 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">73285 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserConfig</span>
+                <span class="method-start">73524 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateReports</span>
+                <span class="method-start">86289 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">92171 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ohrm.testcases.AddEmployeeTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserConfig</span>
+                <span class="method-start">92426 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateAddEmployee</span>
+                <span class="method-start">101881 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">107906 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserConfig</span>
+                <span class="method-start">108161 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateEmployeeNameTextbox</span>
+                <span class="method-start">132777 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">139508 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserConfig</span>
+                <span class="method-start">139761 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateFillEmployeeNameTextbox</span>
+                <span class="method-start">147910 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">153596 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserConfig</span>
+                <span class="method-start">153840 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateSavebutton</span>
+                <span class="method-start">173875 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">180688 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserConfig</span>
+                <span class="method-start">180944 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateToggleSwitch</span>
+                <span class="method-start">192633 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">198990 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserConfig</span>
+                <span class="method-start">199312 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateUploadImage</span>
+                <span class="method-start">218833 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">232116 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserConfig</span>
+                <span class="method-start">232469 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateUploadImageButton</span>
+                <span class="method-start">241753 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">248095 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserConfig</span>
+                <span class="method-start">248357 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateUploadImageLargeFiles</span>
+                <span class="method-start">262509 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">275663 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ohrm.testcases.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserConfig</span>
+                <span class="method-start">275984 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateLoginTest</span>
+                <span class="method-start">290461 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">291267 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ohrm.testcases.PIMTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserConfig</span>
+                <span class="method-start">291549 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deletePIM</span>
+                <span class="method-start">303981 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">311828 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserConfig</span>
+                <span class="method-start">312017 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validatePIM</span>
+                <span class="method-start">324525 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">328997 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserConfig</span>
+                <span class="method-start">329201 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validatePIMEdit</span>
+                <span class="method-start">338447 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">345818 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserConfig</span>
+                <span class="method-start">346040 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validatePIMEmployeeList</span>
+                <span class="method-start">354599 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">360380 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ohrm.testcases.RecruitmentTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserConfig</span>
+                <span class="method-start">360567 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateCandidate</span>
+                <span class="method-start">369235 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">374566 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserConfig</span>
+                <span class="method-start">374809 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateDownloadIcon</span>
+                <span class="method-start">385501 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">392254 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserConfig</span>
+                <span class="method-start">392502 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateRecruitment</span>
+                <span class="method-start">403978 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">408162 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserConfig</span>
+                <span class="method-start">408352 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateResumeUploader</span>
+                <span class="method-start">421162 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">435347 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserConfig</span>
+                <span class="method-start">435719 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateResumeUploaderLargeFiles</span>
+                <span class="method-start">445699 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">458514 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserConfig</span>
+                <span class="method-start">458905 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateResumeUploaderTextbox</span>
+                <span class="method-start">469478 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">476552 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserConfig</span>
+                <span class="method-start">476862 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateViewIcon</span>
+                <span class="method-start">486507 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">495473 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
